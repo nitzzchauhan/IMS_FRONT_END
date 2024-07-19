@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 import ContactUs from "./components/ContactUs.jsx";
 import Address from "./components/Address.jsx";
+import ProductDetails from "./components/pages/ProductDetails.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,7 +26,10 @@ const router = createBrowserRouter(
         <Route path="address" element={<Address />} />
       </Route>
 
-      <Route path="products" element={<Product />} />
+      <Route path="products" element={<Product />} >
+        <Route path=":id" element={<ProductDetails />} />
+      </Route>
+
     </Route>
   )
 );
