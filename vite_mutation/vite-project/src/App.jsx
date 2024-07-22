@@ -23,7 +23,7 @@ function App() {
           console.log(count.amount)
           setCount(count.amount)
         }}>
-          count is {count.count}
+          count is {count}
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
